@@ -1,0 +1,79 @@
+# =============== #
+# Unity generated #
+# =============== #
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Uncomment if you have a cache directory
+# [Aa]sset[Ss]tore/
+
+# =============== #
+# Visual Studio   #
+# =============== #
+.vscode/
+.vs/
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+*.ide
+
+# =============== #
+# OS generated    #
+# =============== #
+.DS_Store
+*.swp
+*.swo
+*~
+
+# =============== #
+# TextMeshPro     #
+# =============== #
+TextMeshPro/
+
+# =============== #
+# Audio/Video     #
+# =============== #
+*.mp4
+*.wav
+*.mp3
+
+# =============== #
+# Auto-generated  #
+# =============== #
+*.apk
+*.aab
+
+# =============== #
+# Builds          #
+# =============== #
+*.exe
+*.app
+*.msi
+*.dll
+
+# =============== #
+# JetBrains Rider #
+# =============== #
+.idea/
+*.sln.iml
+
+# =============== #
+# Unity Collaborate #
+# =============== #
+/.Collab/
