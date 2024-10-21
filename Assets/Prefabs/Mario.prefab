@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 1358175321881891546}
   - component: {fileID: 8234005830466650099}
   - component: {fileID: 26426738973478441}
+  - component: {fileID: 3995987300339330659}
+  - component: {fileID: 4946849657625420198}
   m_Layer: 3
   m_Name: Mario
   m_TagString: Player
@@ -113,6 +115,34 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 1, y: 1}
   m_Direction: 0
+--- !u!114 &3995987300339330659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367374904709322086}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75b661f60aad74eca933bf95e6f83ac3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spriteRenderer: {fileID: 7576046611375665367}
+  deadSprite: {fileID: 21300000, guid: e9345d9e9a21949478e4292b904591cd, type: 3}
+--- !u!114 &4946849657625420198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1367374904709322086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e122917dee78474dab8466d3c8faaaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  smallRenderer: {fileID: 2251008791496432326}
+  bigRenderer: {fileID: 8898415963477674794}
 --- !u!1 &3282337154595992525
 GameObject:
   m_ObjectHideFlags: 0
@@ -124,6 +154,7 @@ GameObject:
   - component: {fileID: 1271748557557267960}
   - component: {fileID: 8951996721057396999}
   - component: {fileID: 8898415963477674794}
+  - component: {fileID: 1410049849188501985}
   m_Layer: 3
   m_Name: Big
   m_TagString: Untagged
@@ -140,7 +171,7 @@ Transform:
   m_GameObject: {fileID: 3282337154595992525}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
+  m_LocalPosition: {x: 0, y: 0.53, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -153,7 +184,7 @@ SpriteRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3282337154595992525}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -186,7 +217,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 17d0f5a19508c994e86dbee100fa8269, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -205,7 +236,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3282337154595992525}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e32e64f2c626249299b88b04380325e8, type: 3}
   m_Name: 
@@ -214,6 +245,23 @@ MonoBehaviour:
   jump: {fileID: 21300000, guid: 5772f9c35b012a14aac1cbcef7adfcea, type: 3}
   slide: {fileID: 21300000, guid: bfb02f37424e1504cb18192b8e445d43, type: 3}
   run: {fileID: 21300000, guid: bd69c9ac1c7046d41862f618d99ca856, type: 3}
+--- !u!114 &1410049849188501985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3282337154595992525}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fad969cd93964da5b8512607a5a5490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: 70a814181cd2645409e832dd63d92fb0, type: 3}
+  - {fileID: 21300000, guid: c2e5aa3daa0fa16469ff9173a4c623fb, type: 3}
+  - {fileID: 21300000, guid: bd69c9ac1c7046d41862f618d99ca856, type: 3}
+  framerate: 0.16666667
 --- !u!1 &9190899464333693051
 GameObject:
   m_ObjectHideFlags: 0
@@ -225,6 +273,7 @@ GameObject:
   - component: {fileID: 7373916023279801384}
   - component: {fileID: 7576046611375665367}
   - component: {fileID: 2251008791496432326}
+  - component: {fileID: 3825560052902679424}
   m_Layer: 3
   m_Name: Small
   m_TagString: Untagged
@@ -287,7 +336,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 21300000, guid: 316669850fc22b947a5ffd08a201559e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -315,3 +364,20 @@ MonoBehaviour:
   jump: {fileID: 21300000, guid: fe0645aacf16c3c4cab67a8ac2e3bc3a, type: 3}
   slide: {fileID: 21300000, guid: 98014fa15d2f2f84495aa2512e65cfba, type: 3}
   run: {fileID: 21300000, guid: f8683836d7ce2e84ca96fcced8e51144, type: 3}
+--- !u!114 &3825560052902679424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9190899464333693051}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fad969cd93964da5b8512607a5a5490, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprites:
+  - {fileID: 21300000, guid: f8683836d7ce2e84ca96fcced8e51144, type: 3}
+  - {fileID: 21300000, guid: 35672984aa1fd894da6716da8832d93a, type: 3}
+  - {fileID: 21300000, guid: d819e2f75eeea5242b6de17737bb2268, type: 3}
+  framerate: 0.16666667
