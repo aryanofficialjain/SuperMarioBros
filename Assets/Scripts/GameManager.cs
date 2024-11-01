@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -11,9 +10,6 @@ public class GameManager : MonoBehaviour
     public int Stage {get; private set;}
 
     public int Lives {get; private set;}
-
-    public int coins {get; private set;}
-
 
 
 
@@ -46,7 +42,6 @@ public class GameManager : MonoBehaviour
 
     private void NewGame(){
         Lives = 3;
-        coins = 0;
         Loadlevel(1,1);
 
     }
@@ -83,19 +78,6 @@ public class GameManager : MonoBehaviour
         // SceneManager.LoadScene("GameOver");
         NewGame();
 
-    }
-
-    public void AddCoin(){
-        coins++;
-
-        if(coins == 100){
-            AddLife();
-            coins = 0;
-        }
-    }
-
-    public void AddLife(){
-        Lives++;
     }
 
 }
